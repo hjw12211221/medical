@@ -4,7 +4,7 @@
 ``` bash
 # install dependencies
 npm install
-11111111111111
+
 # serve with hot reload at localhost:8080
 npm run dev
 
