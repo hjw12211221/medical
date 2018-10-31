@@ -1,0 +1,848 @@
+@font-face
+  font-family 'iconfont'  
+  src url('//at.alicdn.com/t/font_239824_gv1zuwz49n7sc3di.ttf') format('truetype')
+font,.font
+  font-family 'iconfont'
+// 变量
+color_primary = #ffa052
+color_darker = #333
+color_dark = #666
+color_gray = #999
+color_light = #ccc
+color_lighter = #ddd
+default_border_color = #eee
+default_bg_color = #eee
+default_header_height = 48px
+default_tabs_height = 58px
+
+font_little = 13px
+font_small = 15px
+font_normal = 17px
+font_big = 19px
+font_tiny = 21px
+space0 = 0
+space1 = 5px
+space2 = 10px
+space3 = 15px
+space4 = 20px
+
+// 重置浏览器行为
+html
+  color #333
+  background #fff
+  box-sizing border-box
+  -moz-box-sizing border-box /* Firefox */
+  -webkit-box-sizing border-box /* Safari */
+  font-family: 'iconfont';
+  -webkit-text-size-adjust:none;
+  font-size 15px
+body,div,h1,h2,h3,h4,h5,h6,p,ul,li,input
+  margin 0
+  padding 0
+h1,h2,h3,h4,h5,h6
+  font-weight normal
+  line-height 1
+table
+  border-collapse collapse
+  border-spaceing 0
+img
+  border 0
+  max-width: 100%
+a
+  color #333
+  text-decoration none
+p
+  line-height 1.5
+  word-break:break-all;
+ul
+  list-style none
+textarea,input
+  outline none
+  border none
+  -webkit-appearance none
+input[type="button"],input[type="submit"],button,input[type='date']
+  outline none
+  border none
+  -webkit-appearance none
+
+input
+  max-width: 100%
+  -webkit-tap-highlight-color rgba(0,0,0,0)
+input[type='text']
+  font-size 15px
+.header
+  position fixed
+  background #fff
+  z-index 999
+  top 0
+  left 0
+  right 0
+  height 48px
+  border-bottom 1px solid #ddd
+  display flex
+  justify-content around
+  align-items center
+.title
+  font-size 18px
+  flex 70
+.left
+  margin-left 15px
+  display flex
+  justify-content center
+  align-items center
+.right
+  margin-right 15px
+  font-size 16px
+  display flex
+  justify-content center
+  align-items center
+// color 参考clrs.cc
+.primary
+  color color_primary
+.dark
+  color color_dark
+.gray
+  color color_gray
+.darker
+  color color_darker
+.light
+  color color_light
+.white
+  color #fff  
+.bg
+  background-color default_bg_color
+.bg-primary
+  background-color color_primary
+.bg-red
+  background-color red!important
+.bg-white
+  background-color #fff!important
+.bg-wathet
+  background-color #88C4FC!important
+.bg-gray
+  background-color color_gray!important
+.bg-light
+  background-color color_light
+.bg-fixed
+  position fixed
+  width 100%
+  height 100%
+  left 0
+  top 0
+  z-index -1
+  background-color #f1f1f1
+.navy
+  color #001f3f
+.blue
+  color #0074D9
+.aqua
+  color #7fdbff
+.teal
+  color #39cccc
+.olive
+  color #3d9970
+.green
+  color #2ECC40
+.lime
+  color #01ff70
+.yellow
+  color #FFDC00
+.orange
+  color #ff851b  
+.red
+  color #FF4136
+.maroon
+  color #85144b
+.fuchsia
+  color #f012be
+.purple
+  color #b10dc9
+.gray
+  color #aaa
+.silver
+  color #ddd
+
+
+// font
+.f5,.little,h5
+  font-size 13px
+.f45
+  font-size 14px
+.f4,.small,h4
+  font-size 15px
+.f3,.normal,h3
+  font-size 17px
+.f2,.big,h2
+  font-size 19px
+.f1,.tiny,h1
+  font-size 21px
+.font-md
+  font-size 25px
+.bold
+  font-weight bold
+  
+// line-height
+.lh1
+  line-height 1
+.lh15
+  line-height 1.5
+.lh18
+  line-height 1.8
+.lh2
+  line-height 2
+//height&line-height
+.lh_h20
+  line-height 20px
+  height 20px
+.lh_h25
+  line-height 25px
+  height 25px
+.lh_h30
+  line-height 30px
+  height 30px
+.lh_h40
+  line-height 40px
+  height 40px
+.lh_h50
+  line-height 50px
+  height 50px
+// margin
+.m0
+  margin 0
+.m1
+  margin space1
+.m2
+  margin space2
+.m3
+  margin space3
+.m4
+  margin space4
+
+.mt1
+  margin-top space1
+.mt2
+  margin-top space2
+.mt3
+  margin-top space3
+.mt4
+  margin-top space4
+
+.mr1
+  margin-right space1
+.mr2
+  margin-right space2
+.mr3
+  margin-right space3
+.mr4
+  margin-right space4
+
+.mb1
+  margin-bottom space1
+.mb2
+  margin-bottom space2
+.mb3
+  margin-bottom space3
+.mb4
+  margin-bottom space4  
+
+.ml1
+  margin-left space1
+.ml2
+  margin-left space2
+.ml3
+  margin-left space3
+.ml4
+  margin-left space4
+
+.mx-auto
+  margin-left auto
+  margin-right auto
+.mx1
+  margin-left space1
+  margin-right space1
+.mx2
+  margin-left space2
+  margin-right space2
+.mx3
+  margin-left space3
+  margin-right space3
+.mx4
+  margin-left space4
+  margin-right space4
+  
+.my1
+  margin-top space1
+  margin-bottom space1
+.my2
+  margin-top space2
+  margin-bottom space2
+.my3
+  margin-top space3
+  margin-bottom space3
+.my4
+  margin-top space4
+  margin-bottom space4
+
+
+// padding
+.p0
+  padding 0
+.p1
+  padding space1
+.p2
+  padding space2
+.p3
+  padding space3
+.p4
+  padding space4
+
+.pt1
+  padding-top space1
+.pt2
+  padding-top space2
+.pt3
+  padding-top space3
+.pt4
+  padding-top space4
+
+.pr1
+  padding-right space1
+.pr2
+  padding-right space2
+.pr3
+  padding-right space3
+.pr4
+  padding-right space4
+
+.pb1
+  padding-bottom space1
+.pb2
+  padding-bottom space2
+.pb3
+  padding-bottom space3
+.pb4
+  padding-bottom space4  
+
+.pl1
+  padding-left space1
+.pl2
+  padding-left space2
+.pl3
+  padding-left space3
+.pl4
+  padding-left space4
+
+.px-auto
+  padding-left auto
+  padding-right auto
+.px1
+  padding-left space1
+  padding-right space1
+.px2
+  padding-left space2
+  padding-right space2
+.px3
+  padding-left space3
+  padding-right space3
+.px4
+  padding-left space4
+  padding-right space4
+  
+.py1
+  padding-top space1
+  padding-bottom space1
+.py2
+  padding-top space2
+  padding-bottom space2
+.py3
+  padding-top space3
+  padding-bottom space3
+.py4
+  padding-top space4
+  padding-bottom space4
+
+
+// border
+.border
+  border 1px solid default_border_color
+.border-top
+  border-top 1px solid default_border_color
+.border-bottom
+  border-bottom 1px solid default_border_color
+.border-left
+  border-left 1px solid default_border_color
+.border-right
+  border-right 1px solid default_border_color
+.border-light
+  border-color color_light
+.border-lighter
+  border-color color_lighter
+.border-dashed //仅底部
+  border-style none none dashed none
+.border-primary
+  border-color color_primary
+.primary-bottom
+  position relative
+.primary-bottom:after
+  content:''
+  position absolute
+  left: 50%;
+  bottom 0
+  transform: translate(-50%,0%);
+  animation:mymove 0.5s alternate forwards;
+  background color_primary
+  height:2px
+  width 10px
+  border-radius 2px
+  // border-bottom 2px solid color_primary
+@keyframes mymove
+  from {width:10px;}
+  to {width:100%;}
+.border-brother-top+.border-brother-top
+  border-top 1px solid default_border_color
+.border-odd:nth-of-type(odd)
+  box-sizing border-box
+  -moz-box-sizing border-box /* Firefox */
+  -webkit-box-sizing border-box /* Safari */
+  border-right 1px solid default_border_color
+  border-left 1px solid default_border_color  
+// border-radius
+.round-min
+  border-radius 3px
+.round
+  border-radius 5px
+.rounder
+  border-radius 10px
+.circle
+  border-radius 50%
+// flex
+
+.xy-center
+  flex-direction row
+  justify-content center
+  align-items center
+  // flex
+.flex
+  display flex
+  display -webkit-box/* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+  display -webkit-flex /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+  vertical-align text-top
+.column
+  flex-direction column
+.justify-start
+  justify-content flex-start
+.justify-between
+  justify-content space-between
+.justify-around
+  justify-content space-around
+.align-start
+  align-items flex-start  
+.align-end
+  align-items flex-end  
+.align-center
+  align-items center
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+.flex-wrap-reverse
+  
+  flex-wrap wrap-reverse
+.flex-max
+  -webkit-box-flex 1
+  -webkit-flex 1
+  flex 1
+.justify-end
+  justify-content flex-end
+.justify-center
+  justify-content center
+.self-center
+  align-self center
+.wrap
+  /* 09版 */
+  -webkit-box-lines: multiple;
+  /* 12版 */
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+//transform
+.rotate
+  transform rotate(180deg)
+  -ms-transform rotate(180deg) /* Internet Explorer */
+  -moz-transform rotate(180deg) /* Firefox */
+  -webkit-transform rotate(180deg) /* Safari 和 Chrome */
+  -o-transform rotate(180deg) /* Opera */
+
+.rotate-ninety
+  transform rotate(90deg)
+  -ms-transform rotate(90deg) /* Internet Explorer */
+  -moz-transform rotate(90deg) /* Firefox */
+  -webkit-transform rotate(90deg) /* Safari 和 Chrome */
+  -o-transform rotate(90deg) /* Opera */
+
+// position
+.absolute
+  position absolute
+.relative
+  position relative
+.fixed
+  position fixed!important
+  z-index: 99
+.top0
+  top 0
+.right0
+  right 0
+.bottom0
+  bottom 0
+.left0
+  left 0
+.w1
+  width 10%
+.w2
+  width 20%
+.w3
+  width 30%
+.w4
+  width 40%
+.w5
+  width 50%
+.w6
+  width 60%
+.w7
+  width 70%
+.w8
+  width 80%
+.w9
+  width 90% 
+.w10
+  width 100%
+.w25
+  width 25%
+.w33
+  width 33%
+.w34
+  width 34%
+.w66
+  width 66%
+.w67
+  width 67%  
+.fit //强制fit可使用w10
+  max-width 100%
+  height auto
+  
+// display
+.block
+  display block
+.inline
+  display inline
+.inline-block
+  display inline-block
+  *display inline
+  *zoom 1
+
+.floatl
+  float left
+
+.block-hide
+  display none
+.visible-hidden  
+  visibility: hidden
+// align 
+.text-left
+  text-align left
+.text-center
+  text-align center
+.text-right
+  text-align right
+.indent10  
+  text-indent 10px
+.indent15  
+  text-indent 15px
+.indent20  
+  text-indent 20px
+.indent30  
+  text-indent 30px
+// 其他
+.overflow-visible
+  overflow-x visible!important
+  overflow-y visible!important
+.overflow
+  overflow hidden
+.overflow-y
+  overflow-y auto
+  -webkit-overflow-scrolling touch
+.z-index1
+ z-index 1
+.omit
+  text-overflow ellipsis !important
+  overflow hidden !important
+  white-space nowrap !important
+.omit2
+  overflow  hidden !important
+  text-overflow ellipsis !important
+  display -webkit-box !important
+  -webkit-line-clamp 2
+  -webkit-box-orient vertical !important
+.omit3
+  overflow  hidden !important
+  text-overflow ellipsis !important
+  display -webkit-box !important
+  -webkit-line-clamp 3
+  -webkit-box-orient vertical !important
+.box-sizing
+  box-sizing border-box
+  -moz-box-sizing border-box /* Firefox */
+  -webkit-box-sizing border-box /* Safari */
+.bit-font{
+    background: transparent;
+    font-size: 16px;
+    i{ 
+      font-style:normal
+      font-family: 'iconfont';
+      position: relative;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+    }
+    i:before{
+      color: #ccc;
+      position: absolute;
+      content: "\e600";
+      left: 0;
+    }
+    i.hover:before{
+      color: color_primary
+      position: absolute;
+      content: "\e600";
+      left: 0;
+    }
+  }
+//解决ios 点击事件出现背景色样式
+.tap-highlight
+  -webkit-tap-highlight-color:rgba(0,0,0,0)
+// header
+.header
+  position fixed
+  background #fff
+  z-index 999
+  top 0
+  left 0
+  right 0
+  height default_header_height
+  border-bottom 1px solid #ddd
+  text-align center
+  vertical-align middle
+  line-height default_header_height
+  @extend .big
+.has-header
+  position absolute
+  top default_header_height 
+
+// main
+.main
+  position absolute
+  top default_header_height
+  bottom default_tabs_height
+  width 100%
+  overflow-y auto
+  -webkit-overflow-scrolling touch
+// button
+.btn,button
+  background-color color_primary
+  border-radius 3px
+  color #fff
+  cursor pointer
+  display inline-block
+  @extend .normal
+  // font-weight bold
+  // letter-spacing 3px
+  line-height 2
+  padding 0 15px
+  text-align center
+  vertical-align middle
+  text-decoration none
+  white-space nowrap
+  // &:hover
+  //   background darken(#fff, 10%)
+  &.btn-sm
+    border-radius 2px
+    font-size 12px
+    line-height 1.8
+    padding 0 10px
+    font-weight 500
+  &.btn-lg
+    border-radius 5px
+    @extend .big
+    line-height 2.5
+    padding 0 30px
+.btn-block
+  width 95%
+  height 40px
+  line-height 40px
+  background color_primary
+  color #fff
+  border-radius 5px
+  margin 10px 2.5%
+  text-align center
+.btn-block-md
+  width 80%
+  height 35px
+  line-height 35px
+  margin 10px 10%
+//处理字体图标与text垂直问题
+.v-middle  
+  vertical-align middle 
+// input
+.input-lg
+  width 94%;
+  margin-left 3%;
+  text-indent: 40px;
+  background-color rgba(255,255,255,.6);
+  border-radius 15px;
+  border none;
+  outline: none;
+.input-search
+  position: absolute;
+  left: 3%;
+  top: 10px;
+  line-height: 28px;
+  margin-left: 10px;
+.input-bg
+  background-color:#ededed
+.input-round
+  border-radius 34rpx
+  height 68rpx
+  border 2rpx solid default_border_color
+  padding-left 30rpx
+  padding-right 30rpx
+  box-sizing border-box
+-moz-box-sizing border-box /* Firefox */
+-webkit-box-sizing border-box /* Safari */
+  background-color #DAE8F5
+  margin-left auto
+  margin-right auto
+  width 95%
+  font-size 28rpx
+.input-block
+  height 68rpx
+  border 2rpx solid default_border_color
+  padding-left 30rpx
+  padding-right 30rpx
+  box-sizing border-box
+  -moz-box-sizing border-box /* Firefox */
+  -webkit-box-sizing border-box /* Safari */
+  margin-left auto
+  margin-right auto
+  width 95%
+  font-size 28rpx
+// from
+
+//自定义10px bg块
+.bottom_bg
+  position relative
+.bottom_bg:after  
+  position: absolute;
+  top:100%;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: #f1f1f1;
+// 自定义遮挡层
+.mask
+  position: fixed
+  left:0;
+  right:0;
+  top: 0;
+  bottom:0;
+  background-color rgba(0,0,0,0.5)
+  z-index: 100
+.j_modal_content
+  margin-top: 40%;
+.j_modal_text
+  text-align: center
+.contentText{
+  position: absolute;
+  text-align center;
+  width:80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+border(b)
+  position relative
+  &:after
+    content ''
+    display block
+    z-index 100
+    transform-origin 0 0
+    position absolute
+    if b==all
+      top 0px
+      left 0px
+      height 100%
+      width 1px
+      border 1px solid default_border_color
+      transform scaleX(0.5)    
+    if b==left
+      top 0px
+      left 0px
+      height 100%
+      width 1px
+      border-left 1px solid default_border_color
+      transform scaleX(0.5)
+    if b==right
+      top 0px
+      right 0px
+      height 100%
+      width 1px
+      border-right 1px solid default_border_color
+      transform scaleX(0.5)
+    if b==top
+      top 0px
+      left 0px
+      width 100%
+      height 1px
+      border-top 1px solid default_border_color
+      transform scaleY(0.5)
+    if b==bottom
+      bottom 0px
+      left 0px
+      transform-origin 0 100%
+      border-bottom 1px solid default_border_color
+      width: 100%
+      height: 1px
+      transform: scaleY(0.5)
+    if b==bottomColor
+      bottom 0px
+      left 0px
+      transform-origin 0 100%
+      border-bottom 1px solid #DDDDDD
+      width: 100%
+      height: 1px
+      transform: scaleY(0.5)    
+// border
+.handle-border
+  border(all)
+.handle-border-top
+  border(top)
+.handle-border-bottom
+  border(bottom)
+.handle-border-left
+  border(left)
+.handle-border-right
+  border(right)
+.handle-border-bottom-color
+  border(bottomColor)
+
+.notMore
+  background #F1F1F1
+  color #676767
+  text-align center
+  height 40px
+  line-height 40px
+  letter-spacing 1px
+
+
+  
